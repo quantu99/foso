@@ -33,6 +33,10 @@ const nextConfig = {
         source: "/:slug",
         destination: "/blogs/category",
       },
+      {
+        source: "/",
+        destination: "/blogs",
+      },
     ];
   },
 };

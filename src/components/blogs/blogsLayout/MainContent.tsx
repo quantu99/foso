@@ -11,11 +11,11 @@ import {
 import { format } from "date-fns";
 import Link from "next/link";
 import { getLinkDetailBlog } from "@/helpers";
-export function MainContent({ blogs, cats }: any) {
+export function MainContent({ blogs, cats, title }: any) {
   return (
     <div>
       <span className="text-4xl font-extrabold leading-[200%] text-black-2">
-        Tất cả bài viết
+        {title}
       </span>
       <div className="relative mb-12 mt-6 flex h-[312px] w-full items-center rounded-[40px] bg-blue-linear pl-10">
         <div className="flex w-1/2 flex-col gap-8">
@@ -66,7 +66,10 @@ function ContentCard({ item, cats }: any) {
         />
       </Link>
       <div className="flex flex-col gap-4">
-        <Badge title={cats.find((c: any) => c.id === item.categoryId)?.name} />
+        <Badge
+          type={cats.find((c: any) => c.id === item.categoryId)?.type}
+          title={cats.find((c: any) => c.id === item.categoryId)?.name}
+        />
         <Link
           href={getLinkDetailBlog(
             cats.find((c: any) => c.id === item.categoryId)?.slug,
@@ -80,14 +83,14 @@ function ContentCard({ item, cats }: any) {
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-2">
             <CSCalenderOutline />
-            <span className="text-grey-0 text-base font-medium leading-[150%]">
+            <span className="text-base font-medium leading-[150%] text-grey-0">
               {format(item.createdAt, "dd-MM-yyyy")}
             </span>
           </div>
           |
           <div className="flex items-center gap-2">
             <CSClockOutline />
-            <span className="text-grey-0 text-base font-medium leading-[150%]">
+            <span className="text-base font-medium leading-[150%] text-grey-0">
               {item.commentCount} phút đọc
             </span>
           </div>

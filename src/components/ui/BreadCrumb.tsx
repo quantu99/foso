@@ -8,6 +8,8 @@ interface BreadCrumbTitle {
   catLink?: string;
   optionLink?: string;
   contentLink?: string;
+  isBlog?: boolean;
+  isDetail?: boolean;
 }
 export function BreadCrumb({
   catTitle,
@@ -16,9 +18,11 @@ export function BreadCrumb({
   catLink,
   optionLink,
   contentLink,
+  isBlog,
+  isDetail,
 }: BreadCrumbTitle) {
   return (
-    <ul className="flex list-none items-center text-sm">
+    <ul className="flex list-none items-center text-sm leading-[150%]">
       <li>
         <Link href="/">Trang chủ</Link>
       </li>
@@ -33,7 +37,7 @@ export function BreadCrumb({
       {optionTitle && (
         <>
           <ChevronRight size={16} />
-          <li>
+          <li className={`${isBlog ? "font-semibold" : ""}`}>
             <Link href={optionLink ? optionLink : ""}>{optionTitle}</Link>
           </li>
         </>
@@ -41,7 +45,7 @@ export function BreadCrumb({
       {content && (
         <>
           <ChevronRight size={16} />
-          <li>
+          <li className={`${isDetail ? "font-semibold" : ""}`}>
             <Link href={contentLink ? contentLink : ""}>{content}</Link>
           </li>
         </>

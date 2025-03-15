@@ -1,0 +1,156 @@
+.article-content-html {
+    p,
+    li,
+    a,
+    span,
+    nav,
+    ul,
+    ol {
+      font-size: 16px;
+      line-height: 1.6rem;
+      font-weight: 300;
+      margin-bottom: 9px;
+    }
+    h1 {
+      font-weight: 600;
+      margin-bottom: 12px;
+      strong {
+        font-weight: 600;
+      }
+    }
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: 500;
+      margin-top: 10px;
+      margin-bottom: 12px;
+      strong {
+        font-weight: 500;
+      }
+    }
+    h1 {
+      font-size: 1.25rem;
+      line-height: 28px;
+    }
+    h2 {
+      font-size: 1.125rem;
+      line-height: 26px;
+    }
+    h3 {
+      font-size: 1rem;
+      line-height: 24px;
+    }
+    h4 {
+      font-size: 0.875rem;
+      line-height: 22px;
+    }
+    h5 {
+      font-size: 0.75rem;
+      line-height: 20px;
+    }
+    a {
+      color: #23a66b;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .btn {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      margin: 16px auto;
+      width: 240px;
+      padding: 8px 16px;
+      color: white !important;
+      background: linear-gradient(to right, #00341d, #0c9b5b, #29da70);
+      font-size: 0.875rem;
+      line-height: 22px;
+      font-weight: 600;
+      border-radius: 4px;
+      transition: all 0.2s linear;
+      &:hover {
+        color: white;
+        transform: scale(1.1);
+      }
+      strong {
+        font-weight: 600;
+      }
+    }
+    img {
+      width: 100% !important;
+      height: auto;
+      object-fit: contain;
+      display: flex;
+      margin: 12px auto;
+    }
+    figcaption {
+      font-size: 12px;
+      text-align: center;
+      font-style: italic;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    ol {
+      list-style-type: decimal;
+      padding-left: 20px;
+    }
+    ul ul {
+      list-style-type: circle;
+      padding-left: 40px;
+    }
+  
+    ol ol {
+      list-style-type: lower-alpha;
+      padding-left: 40px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 15px;
+      th,
+      td {
+        border: 1px solid #ddd;
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+      }
+  
+      th {
+        background-color: #f2f2f2;
+        font-weight: 600;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+    }
+  }
+  
+  .job-content-html {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.6rem;
+  
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+      margin-bottom: 15px;
+    }
+  
+    ol {
+      list-style: decimal;
+      margin-bottom: 15px;
+    }
+  
+    p {
+      margin-bottom: 10px;
+    }
+  }
+  

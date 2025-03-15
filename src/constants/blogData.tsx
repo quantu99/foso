@@ -2,6 +2,7 @@ export const DUMMY_BLOG_DATA = {
   categories: [
     {
       id: 1,
+      type: "success",
       name: "Công nghệ",
       slug: "cong-nghe",
       description: "Tin tức và bài viết về công nghệ mới nhất",
@@ -15,6 +16,8 @@ export const DUMMY_BLOG_DATA = {
     {
       id: 2,
       name: "Kinh doanh",
+      type: "success-2",
+
       slug: "kinh-doanh",
       description: "Chiến lược và tin tức kinh doanh",
       imageUrl: "https://example.com/images/business.jpg",
@@ -27,6 +30,8 @@ export const DUMMY_BLOG_DATA = {
     {
       id: 3,
       name: "Sức khỏe",
+      type: "success-3",
+
       slug: "suc-khoe",
       description: "Mẹo và lời khuyên để sống khỏe mạnh",
       imageUrl: "https://example.com/images/health.jpg",
@@ -39,6 +44,7 @@ export const DUMMY_BLOG_DATA = {
     {
       id: 4,
       name: "Du lịch",
+      type: "success-4",
       slug: "du-lich",
       description: "Khám phá những điểm đến tuyệt vời trên thế giới",
       imageUrl: "https://example.com/images/travel.jpg",
@@ -51,6 +57,7 @@ export const DUMMY_BLOG_DATA = {
     {
       id: 5,
       name: "Ẩm thực",
+      type: "success-5",
       slug: "am-thuc",
       description: "Công thức nấu ăn và đánh giá nhà hàng",
       imageUrl: "https://example.com/images/food.jpg",
@@ -71,8 +78,26 @@ export const DUMMY_BLOG_DATA = {
       slug: "10-xu-huong-cong-nghe-ai-thay-doi-tuong-lai",
       excerpt:
         "Khám phá những xu hướng AI mới nhất đang định hình tương lai của công nghệ và cuộc sống hàng ngày.",
-      content:
-        "Trí tuệ nhân tạo (AI) đang phát triển với tốc độ chóng mặt và ảnh hưởng đến mọi khía cạnh của cuộc sống hàng ngày. Trong bài viết này, chúng tôi sẽ khám phá 10 xu hướng AI quan trọng nhất sẽ có tác động lớn đến tương lai. Từ xe tự lái đến chăm sóc sức khỏe cá nhân hóa, những tiến bộ trong AI đang mở ra những khả năng mới mà trước đây chỉ tồn tại trong khoa học viễn tưởng. Các doanh nghiệp và cá nhân nên chuẩn bị như thế nào cho những thay đổi này? Hãy cùng tìm hiểu...",
+      content: `
+        <p>BOM (Bill of materials) có nghĩa là định mức nguyên vật liệu. BOM là một danh sách các nguyên liệu thô, thành phần hay linh kiện cần thiết trong quá trình sản xuất ra thành phẩm hoàn chỉnh</p>
+        <p><img alt="" src="test" /><img alt="" src="https://job-api.satek.vn/storage/editor/TLP9wPh3jouOnJoHSqdPt1Pa7W1Dnu9V7joenLwF.png" style="width: 1940px; height: 1456px;" />BOM được xem cơ sở quan trọng trong tính toán, kiểm tra chi tiết quá trình hoạt động sản xuất tổng thể hay chi tiết của doanh nghiệp. Và bạn cần hiểu rõ BOM bởi BOM sẽ mang lại những lợi ích cho nhà sản xuất như sau:</p>
+        <h2><b>Cải thiện tiến độ trong quản lý sản xuất</b></h2>
+        <p>Thông thường khi một nhà sản xuất không có kế hoạch sản xuất tổng thể hay chi tiết rõ ràng, họ thường chỉ sẽ lên một kế hoạch sản xuất cơ bản. Kế hoạch sản xuất này chỉ dự tính được số lượng nguyên vật liệu chung hay máy móc cần thiết để hoàn thiện sản phẩm.</p>
+        <p>Tuy nhiên, nếu doanh nghiệp thiết kế định mức nguyên vật liệu (BOM) kết hợp cùng với từng công đoạn chi tiết, doanh nghiệp sẽ tính toán được chi tiết trong từng thành phẩm sẽ có bao nhiêu bán thành phẩm và trong từng bán thành phẩm có bao nhiêu công đoạn. Và trong mỗi công đoạn cần có số lượng nguyên vật liệu là bao nhiêu để hoàn thiện một sản phẩm.</p>
+        <h2><b>Cải thiện tiến độ trong quản lý sản xuất</b></h2>
+        <p>Thông thường khi một nhà sản xuất không có kế hoạch sản xuất tổng thể hay chi tiết rõ ràng, họ thường chỉ sẽ lên một kế hoạch sản xuất cơ bản. Kế hoạch sản xuất này chỉ dự tính được số lượng nguyên vật liệu chung hay máy móc cần thiết để hoàn thiện sản phẩm.</p>
+        <p>Tuy nhiên, nếu doanh nghiệp thiết kế định mức nguyên vật liệu (BOM) kết hợp cùng với từng công đoạn chi tiết, doanh nghiệp sẽ tính toán được chi tiết trong từng thành phẩm sẽ có bao nhiêu bán thành phẩm và trong từng bán thành phẩm có bao nhiêu công đoạn. Và trong mỗi công đoạn cần có số lượng nguyên vật liệu là bao nhiêu để hoàn thiện một sản phẩm.</p>
+        <p><img alt="" src="https://job-api.satek.vn/storage/editor/dJdcYLuC1dsaCPkJrJxhwfOnhDbiVHiF2rJxeyjM.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Nếu doanh nghiệp không lên kế hoạch chi tiết như vậy, có thể dẫn đến trường hợp nhà sản xuất sẽ mua đầy đủ nguyên vật liệu chung cho một thành phẩm để tiến hành sản xuất. Điều này sẽ khiến thời gian sản xuất kéo dài nếu như quá trình mua nguyên vật liệu không đáp ứng kịp thời tiến độ sản xuất.</p>
+        <p>Do đó, nếu như nhà sản xuất có thể biết được định mức nguyên vật liệu và phân chia theo từng giai đoạn, doanh nghiệp có thể sản xuất các bán thành phẩm với những nguyên liệu có sẵn trước và khi các nguyên vật liệu khác được nhập về sẽ tiếp tục quy trình sản xuất còn lại và không gây gián đoạn tiến độ sản xuất.</p>
+        <h2><b>Giảm chi phí sản xuất</b></h2>
+        <p>Hơn nữa, khi doanh nghiệp không tính toán chi tiết rõ số lượng nguyên vật liệu cho từng bán thành phẩm, từng sản phẩm, doanh nghiệp có thể mua với số lượng lớn nguyên vật liệu và dẫn đến dư thừa trong sản xuất.<img alt="" src="https://job-api.satek.vn/storage/editor/sVDLBUrJxmT2N5o0j7pMZnEebJreRlBkULnSjxVc.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Điều này không những làm tăng chi phí sản xuất mà còn làm tăng chi phí quản lý kho. Vì vậy, nếu doanh nghiệp tính toán được chính xác định mức nguyên vật liệu (BOM), doanh nghiệp sẽ giảm được chi phí đáng kể trong cả quá trình sản xuất và quản lý hàng tồn kho.</p>
+        <h2><b>Tiết kiệm thời gian quy trình làm việc</b></h2>
+        <p>Chắc hẳn tiết kiệm thời gian quy trình làm việc giữa các bộ phận là mối quan tâm mà mọi chủ doanh nghiệp đều mong muốn. Mặc dù định mức nguyên vật liệu (BOM) là một chi tiết nhỏ trong tổng thể quá trình sản xuất. Nhưng nếu doanh nghiệp chú trọng vào định mức nguyên vật liệu (BOM) chuẩn xác cùng với công đoạn chi tiết thì doanh nghiệp có thể rút ngắn được thời gian đáng kể.<img alt="" src="https://job-api.satek.vn/storage/editor/9lmUsIwc9D14FJk78Jh5QvSEPKPsMbq5jgZ35oXI.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Cụ thể doanh nghiệp có thể tiết kiệm thời gian và làm việc nhanh hơn nhờ vào thiết kế BOM và các công đoạn việc chi tiết. Khi doanh nghiệp đã chuẩn bị đầy đủ BOM và công đoạn thì thời gian tính toán nguyên vật liệu cần thiết, lên kế hoạch sản xuất chi tiết, tổng thể sẽ được tự động hóa trên phần mềm. Từ đó, thời gian mua hàng, thời gian trong từng công đoạn sản xuất sẽ được giảm xuống đáng kể.</p>
+        <p>Tóm lại, trên đây là những lý do mà định mức nguyên vật liệu (BOM) có thể góp phần cải thiện quá trình quản trị sản xuất mà bạn nên cần biết. FOSO mong rằng những thông tin trên sẽ hữu ích và giúp bạn cải thiện tốt hơn trong quá trình quản trị sản xuất.</p>
+        `,
       author: {
         id: 1,
         name: "Nguyễn Văn A",
@@ -97,8 +122,26 @@ export const DUMMY_BLOG_DATA = {
       slug: "danh-gia-iphone-16-pro-co-dang-de-nang-cap",
       excerpt:
         "Đánh giá chi tiết về iPhone 16 Pro, những tính năng mới và liệu có đáng để nâng cấp từ mẫu cũ.",
-      content:
-        "Apple vừa ra mắt iPhone 16 Pro với nhiều cải tiến đáng chú ý về hiệu năng, camera và tuổi thọ pin. Nhưng liệu những cải tiến này có đủ để thuyết phục người dùng nâng cấp từ các mẫu cũ? Trong bài đánh giá này, chúng tôi sẽ phân tích chi tiết về thiết kế, màn hình, hiệu năng, camera và thời lượng pin của iPhone 16 Pro. Chúng tôi cũng so sánh nó với iPhone 15 Pro để giúp bạn đưa ra quyết định mua hàng sáng suốt...",
+      content: `
+        <p>BOM (Bill of materials) có nghĩa là định mức nguyên vật liệu. BOM là một danh sách các nguyên liệu thô, thành phần hay linh kiện cần thiết trong quá trình sản xuất ra thành phẩm hoàn chỉnh</p>
+        <p><img alt="" src="test" /><img alt="" src="https://job-api.satek.vn/storage/editor/TLP9wPh3jouOnJoHSqdPt1Pa7W1Dnu9V7joenLwF.png" style="width: 1940px; height: 1456px;" />BOM được xem cơ sở quan trọng trong tính toán, kiểm tra chi tiết quá trình hoạt động sản xuất tổng thể hay chi tiết của doanh nghiệp. Và bạn cần hiểu rõ BOM bởi BOM sẽ mang lại những lợi ích cho nhà sản xuất như sau:</p>
+        <h2><b>Cải thiện tiến độ trong quản lý sản xuất</b></h2>
+        <p>Thông thường khi một nhà sản xuất không có kế hoạch sản xuất tổng thể hay chi tiết rõ ràng, họ thường chỉ sẽ lên một kế hoạch sản xuất cơ bản. Kế hoạch sản xuất này chỉ dự tính được số lượng nguyên vật liệu chung hay máy móc cần thiết để hoàn thiện sản phẩm.</p>
+        <p>Tuy nhiên, nếu doanh nghiệp thiết kế định mức nguyên vật liệu (BOM) kết hợp cùng với từng công đoạn chi tiết, doanh nghiệp sẽ tính toán được chi tiết trong từng thành phẩm sẽ có bao nhiêu bán thành phẩm và trong từng bán thành phẩm có bao nhiêu công đoạn. Và trong mỗi công đoạn cần có số lượng nguyên vật liệu là bao nhiêu để hoàn thiện một sản phẩm.</p>
+        <h2><b>Cải thiện tiến độ trong quản lý sản xuất</b></h2>
+        <p>Thông thường khi một nhà sản xuất không có kế hoạch sản xuất tổng thể hay chi tiết rõ ràng, họ thường chỉ sẽ lên một kế hoạch sản xuất cơ bản. Kế hoạch sản xuất này chỉ dự tính được số lượng nguyên vật liệu chung hay máy móc cần thiết để hoàn thiện sản phẩm.</p>
+        <p>Tuy nhiên, nếu doanh nghiệp thiết kế định mức nguyên vật liệu (BOM) kết hợp cùng với từng công đoạn chi tiết, doanh nghiệp sẽ tính toán được chi tiết trong từng thành phẩm sẽ có bao nhiêu bán thành phẩm và trong từng bán thành phẩm có bao nhiêu công đoạn. Và trong mỗi công đoạn cần có số lượng nguyên vật liệu là bao nhiêu để hoàn thiện một sản phẩm.</p>
+        <p><img alt="" src="https://job-api.satek.vn/storage/editor/dJdcYLuC1dsaCPkJrJxhwfOnhDbiVHiF2rJxeyjM.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Nếu doanh nghiệp không lên kế hoạch chi tiết như vậy, có thể dẫn đến trường hợp nhà sản xuất sẽ mua đầy đủ nguyên vật liệu chung cho một thành phẩm để tiến hành sản xuất. Điều này sẽ khiến thời gian sản xuất kéo dài nếu như quá trình mua nguyên vật liệu không đáp ứng kịp thời tiến độ sản xuất.</p>
+        <p>Do đó, nếu như nhà sản xuất có thể biết được định mức nguyên vật liệu và phân chia theo từng giai đoạn, doanh nghiệp có thể sản xuất các bán thành phẩm với những nguyên liệu có sẵn trước và khi các nguyên vật liệu khác được nhập về sẽ tiếp tục quy trình sản xuất còn lại và không gây gián đoạn tiến độ sản xuất.</p>
+        <h2><b>Giảm chi phí sản xuất</b></h2>
+        <p>Hơn nữa, khi doanh nghiệp không tính toán chi tiết rõ số lượng nguyên vật liệu cho từng bán thành phẩm, từng sản phẩm, doanh nghiệp có thể mua với số lượng lớn nguyên vật liệu và dẫn đến dư thừa trong sản xuất.<img alt="" src="https://job-api.satek.vn/storage/editor/sVDLBUrJxmT2N5o0j7pMZnEebJreRlBkULnSjxVc.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Điều này không những làm tăng chi phí sản xuất mà còn làm tăng chi phí quản lý kho. Vì vậy, nếu doanh nghiệp tính toán được chính xác định mức nguyên vật liệu (BOM), doanh nghiệp sẽ giảm được chi phí đáng kể trong cả quá trình sản xuất và quản lý hàng tồn kho.</p>
+        <h2><b>Tiết kiệm thời gian quy trình làm việc</b></h2>
+        <p>Chắc hẳn tiết kiệm thời gian quy trình làm việc giữa các bộ phận là mối quan tâm mà mọi chủ doanh nghiệp đều mong muốn. Mặc dù định mức nguyên vật liệu (BOM) là một chi tiết nhỏ trong tổng thể quá trình sản xuất. Nhưng nếu doanh nghiệp chú trọng vào định mức nguyên vật liệu (BOM) chuẩn xác cùng với công đoạn chi tiết thì doanh nghiệp có thể rút ngắn được thời gian đáng kể.<img alt="" src="https://job-api.satek.vn/storage/editor/9lmUsIwc9D14FJk78Jh5QvSEPKPsMbq5jgZ35oXI.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Cụ thể doanh nghiệp có thể tiết kiệm thời gian và làm việc nhanh hơn nhờ vào thiết kế BOM và các công đoạn việc chi tiết. Khi doanh nghiệp đã chuẩn bị đầy đủ BOM và công đoạn thì thời gian tính toán nguyên vật liệu cần thiết, lên kế hoạch sản xuất chi tiết, tổng thể sẽ được tự động hóa trên phần mềm. Từ đó, thời gian mua hàng, thời gian trong từng công đoạn sản xuất sẽ được giảm xuống đáng kể.</p>
+        <p>Tóm lại, trên đây là những lý do mà định mức nguyên vật liệu (BOM) có thể góp phần cải thiện quá trình quản trị sản xuất mà bạn nên cần biết. FOSO mong rằng những thông tin trên sẽ hữu ích và giúp bạn cải thiện tốt hơn trong quá trình quản trị sản xuất.</p>
+        `,
       author: {
         id: 2,
         name: "Trần Thị B",
@@ -123,8 +166,26 @@ export const DUMMY_BLOG_DATA = {
       slug: "huong-dan-xay-dung-pc-gaming-2025",
       excerpt:
         "Mọi thứ bạn cần biết để xây dựng một PC chơi game mạnh mẽ trong năm 2025.",
-      content:
-        "Xây dựng PC gaming có thể là một trải nghiệm thú vị nhưng cũng đầy thách thức. Với vô số lựa chọn về CPU, GPU, mainboard và các thành phần khác, việc quyết định cấu hình phù hợp với ngân sách và nhu cầu của bạn có thể gây nhầm lẫn. Hướng dẫn này sẽ giúp bạn điều hướng qua quá trình xây dựng PC gaming từ A đến Z, bao gồm lựa chọn linh kiện, lắp ráp và tối ưu hóa hiệu suất...",
+      content: `
+        <p>BOM (Bill of materials) có nghĩa là định mức nguyên vật liệu. BOM là một danh sách các nguyên liệu thô, thành phần hay linh kiện cần thiết trong quá trình sản xuất ra thành phẩm hoàn chỉnh</p>
+        <p><img alt="" src="test" /><img alt="" src="https://job-api.satek.vn/storage/editor/TLP9wPh3jouOnJoHSqdPt1Pa7W1Dnu9V7joenLwF.png" style="width: 1940px; height: 1456px;" />BOM được xem cơ sở quan trọng trong tính toán, kiểm tra chi tiết quá trình hoạt động sản xuất tổng thể hay chi tiết của doanh nghiệp. Và bạn cần hiểu rõ BOM bởi BOM sẽ mang lại những lợi ích cho nhà sản xuất như sau:</p>
+        <h2><b>Cải thiện tiến độ trong quản lý sản xuất</b></h2>
+        <p>Thông thường khi một nhà sản xuất không có kế hoạch sản xuất tổng thể hay chi tiết rõ ràng, họ thường chỉ sẽ lên một kế hoạch sản xuất cơ bản. Kế hoạch sản xuất này chỉ dự tính được số lượng nguyên vật liệu chung hay máy móc cần thiết để hoàn thiện sản phẩm.</p>
+        <p>Tuy nhiên, nếu doanh nghiệp thiết kế định mức nguyên vật liệu (BOM) kết hợp cùng với từng công đoạn chi tiết, doanh nghiệp sẽ tính toán được chi tiết trong từng thành phẩm sẽ có bao nhiêu bán thành phẩm và trong từng bán thành phẩm có bao nhiêu công đoạn. Và trong mỗi công đoạn cần có số lượng nguyên vật liệu là bao nhiêu để hoàn thiện một sản phẩm.</p>
+        <h2><b>Cải thiện tiến độ trong quản lý sản xuất</b></h2>
+        <p>Thông thường khi một nhà sản xuất không có kế hoạch sản xuất tổng thể hay chi tiết rõ ràng, họ thường chỉ sẽ lên một kế hoạch sản xuất cơ bản. Kế hoạch sản xuất này chỉ dự tính được số lượng nguyên vật liệu chung hay máy móc cần thiết để hoàn thiện sản phẩm.</p>
+        <p>Tuy nhiên, nếu doanh nghiệp thiết kế định mức nguyên vật liệu (BOM) kết hợp cùng với từng công đoạn chi tiết, doanh nghiệp sẽ tính toán được chi tiết trong từng thành phẩm sẽ có bao nhiêu bán thành phẩm và trong từng bán thành phẩm có bao nhiêu công đoạn. Và trong mỗi công đoạn cần có số lượng nguyên vật liệu là bao nhiêu để hoàn thiện một sản phẩm.</p>
+        <p><img alt="" src="https://job-api.satek.vn/storage/editor/dJdcYLuC1dsaCPkJrJxhwfOnhDbiVHiF2rJxeyjM.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Nếu doanh nghiệp không lên kế hoạch chi tiết như vậy, có thể dẫn đến trường hợp nhà sản xuất sẽ mua đầy đủ nguyên vật liệu chung cho một thành phẩm để tiến hành sản xuất. Điều này sẽ khiến thời gian sản xuất kéo dài nếu như quá trình mua nguyên vật liệu không đáp ứng kịp thời tiến độ sản xuất.</p>
+        <p>Do đó, nếu như nhà sản xuất có thể biết được định mức nguyên vật liệu và phân chia theo từng giai đoạn, doanh nghiệp có thể sản xuất các bán thành phẩm với những nguyên liệu có sẵn trước và khi các nguyên vật liệu khác được nhập về sẽ tiếp tục quy trình sản xuất còn lại và không gây gián đoạn tiến độ sản xuất.</p>
+        <h2><b>Giảm chi phí sản xuất</b></h2>
+        <p>Hơn nữa, khi doanh nghiệp không tính toán chi tiết rõ số lượng nguyên vật liệu cho từng bán thành phẩm, từng sản phẩm, doanh nghiệp có thể mua với số lượng lớn nguyên vật liệu và dẫn đến dư thừa trong sản xuất.<img alt="" src="https://job-api.satek.vn/storage/editor/sVDLBUrJxmT2N5o0j7pMZnEebJreRlBkULnSjxVc.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Điều này không những làm tăng chi phí sản xuất mà còn làm tăng chi phí quản lý kho. Vì vậy, nếu doanh nghiệp tính toán được chính xác định mức nguyên vật liệu (BOM), doanh nghiệp sẽ giảm được chi phí đáng kể trong cả quá trình sản xuất và quản lý hàng tồn kho.</p>
+        <h2><b>Tiết kiệm thời gian quy trình làm việc</b></h2>
+        <p>Chắc hẳn tiết kiệm thời gian quy trình làm việc giữa các bộ phận là mối quan tâm mà mọi chủ doanh nghiệp đều mong muốn. Mặc dù định mức nguyên vật liệu (BOM) là một chi tiết nhỏ trong tổng thể quá trình sản xuất. Nhưng nếu doanh nghiệp chú trọng vào định mức nguyên vật liệu (BOM) chuẩn xác cùng với công đoạn chi tiết thì doanh nghiệp có thể rút ngắn được thời gian đáng kể.<img alt="" src="https://job-api.satek.vn/storage/editor/9lmUsIwc9D14FJk78Jh5QvSEPKPsMbq5jgZ35oXI.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Cụ thể doanh nghiệp có thể tiết kiệm thời gian và làm việc nhanh hơn nhờ vào thiết kế BOM và các công đoạn việc chi tiết. Khi doanh nghiệp đã chuẩn bị đầy đủ BOM và công đoạn thì thời gian tính toán nguyên vật liệu cần thiết, lên kế hoạch sản xuất chi tiết, tổng thể sẽ được tự động hóa trên phần mềm. Từ đó, thời gian mua hàng, thời gian trong từng công đoạn sản xuất sẽ được giảm xuống đáng kể.</p>
+        <p>Tóm lại, trên đây là những lý do mà định mức nguyên vật liệu (BOM) có thể góp phần cải thiện quá trình quản trị sản xuất mà bạn nên cần biết. FOSO mong rằng những thông tin trên sẽ hữu ích và giúp bạn cải thiện tốt hơn trong quá trình quản trị sản xuất.</p>
+        `,
       author: {
         id: 3,
         name: "Lê Văn C",
@@ -149,8 +210,26 @@ export const DUMMY_BLOG_DATA = {
       slug: "hieu-ve-blockchain-va-tiem-nang-ngoai-tien-dien-tu",
       excerpt:
         "Khám phá cách công nghệ blockchain đang được áp dụng vượt ra ngoài Bitcoin và tiền điện tử.",
-      content:
-        "Mặc dù blockchain thường được biết đến nhiều nhất thông qua Bitcoin và các loại tiền điện tử khác, nhưng tiềm năng của công nghệ này vượt xa lĩnh vực tài chính. Từ chuỗi cung ứng đến chăm sóc sức khỏe, blockchain đang cách mạng hóa cách các tổ chức lưu trữ, xác minh và bảo mật dữ liệu. Bài viết này sẽ giải thích cách hoạt động của blockchain, các ứng dụng của nó ngoài tiền điện tử và cách nó có thể định hình tương lai của các ngành công nghiệp khác nhau...",
+      content: `
+        <p>BOM (Bill of materials) có nghĩa là định mức nguyên vật liệu. BOM là một danh sách các nguyên liệu thô, thành phần hay linh kiện cần thiết trong quá trình sản xuất ra thành phẩm hoàn chỉnh</p>
+        <p><img alt="" src="test" /><img alt="" src="https://job-api.satek.vn/storage/editor/TLP9wPh3jouOnJoHSqdPt1Pa7W1Dnu9V7joenLwF.png" style="width: 1940px; height: 1456px;" />BOM được xem cơ sở quan trọng trong tính toán, kiểm tra chi tiết quá trình hoạt động sản xuất tổng thể hay chi tiết của doanh nghiệp. Và bạn cần hiểu rõ BOM bởi BOM sẽ mang lại những lợi ích cho nhà sản xuất như sau:</p>
+        <h2><b>Cải thiện tiến độ trong quản lý sản xuất</b></h2>
+        <p>Thông thường khi một nhà sản xuất không có kế hoạch sản xuất tổng thể hay chi tiết rõ ràng, họ thường chỉ sẽ lên một kế hoạch sản xuất cơ bản. Kế hoạch sản xuất này chỉ dự tính được số lượng nguyên vật liệu chung hay máy móc cần thiết để hoàn thiện sản phẩm.</p>
+        <p>Tuy nhiên, nếu doanh nghiệp thiết kế định mức nguyên vật liệu (BOM) kết hợp cùng với từng công đoạn chi tiết, doanh nghiệp sẽ tính toán được chi tiết trong từng thành phẩm sẽ có bao nhiêu bán thành phẩm và trong từng bán thành phẩm có bao nhiêu công đoạn. Và trong mỗi công đoạn cần có số lượng nguyên vật liệu là bao nhiêu để hoàn thiện một sản phẩm.</p>
+        <h2><b>Cải thiện tiến độ trong quản lý sản xuất</b></h2>
+        <p>Thông thường khi một nhà sản xuất không có kế hoạch sản xuất tổng thể hay chi tiết rõ ràng, họ thường chỉ sẽ lên một kế hoạch sản xuất cơ bản. Kế hoạch sản xuất này chỉ dự tính được số lượng nguyên vật liệu chung hay máy móc cần thiết để hoàn thiện sản phẩm.</p>
+        <p>Tuy nhiên, nếu doanh nghiệp thiết kế định mức nguyên vật liệu (BOM) kết hợp cùng với từng công đoạn chi tiết, doanh nghiệp sẽ tính toán được chi tiết trong từng thành phẩm sẽ có bao nhiêu bán thành phẩm và trong từng bán thành phẩm có bao nhiêu công đoạn. Và trong mỗi công đoạn cần có số lượng nguyên vật liệu là bao nhiêu để hoàn thiện một sản phẩm.</p>
+        <p><img alt="" src="https://job-api.satek.vn/storage/editor/dJdcYLuC1dsaCPkJrJxhwfOnhDbiVHiF2rJxeyjM.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Nếu doanh nghiệp không lên kế hoạch chi tiết như vậy, có thể dẫn đến trường hợp nhà sản xuất sẽ mua đầy đủ nguyên vật liệu chung cho một thành phẩm để tiến hành sản xuất. Điều này sẽ khiến thời gian sản xuất kéo dài nếu như quá trình mua nguyên vật liệu không đáp ứng kịp thời tiến độ sản xuất.</p>
+        <p>Do đó, nếu như nhà sản xuất có thể biết được định mức nguyên vật liệu và phân chia theo từng giai đoạn, doanh nghiệp có thể sản xuất các bán thành phẩm với những nguyên liệu có sẵn trước và khi các nguyên vật liệu khác được nhập về sẽ tiếp tục quy trình sản xuất còn lại và không gây gián đoạn tiến độ sản xuất.</p>
+        <h2><b>Giảm chi phí sản xuất</b></h2>
+        <p>Hơn nữa, khi doanh nghiệp không tính toán chi tiết rõ số lượng nguyên vật liệu cho từng bán thành phẩm, từng sản phẩm, doanh nghiệp có thể mua với số lượng lớn nguyên vật liệu và dẫn đến dư thừa trong sản xuất.<img alt="" src="https://job-api.satek.vn/storage/editor/sVDLBUrJxmT2N5o0j7pMZnEebJreRlBkULnSjxVc.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Điều này không những làm tăng chi phí sản xuất mà còn làm tăng chi phí quản lý kho. Vì vậy, nếu doanh nghiệp tính toán được chính xác định mức nguyên vật liệu (BOM), doanh nghiệp sẽ giảm được chi phí đáng kể trong cả quá trình sản xuất và quản lý hàng tồn kho.</p>
+        <h2><b>Tiết kiệm thời gian quy trình làm việc</b></h2>
+        <p>Chắc hẳn tiết kiệm thời gian quy trình làm việc giữa các bộ phận là mối quan tâm mà mọi chủ doanh nghiệp đều mong muốn. Mặc dù định mức nguyên vật liệu (BOM) là một chi tiết nhỏ trong tổng thể quá trình sản xuất. Nhưng nếu doanh nghiệp chú trọng vào định mức nguyên vật liệu (BOM) chuẩn xác cùng với công đoạn chi tiết thì doanh nghiệp có thể rút ngắn được thời gian đáng kể.<img alt="" src="https://job-api.satek.vn/storage/editor/9lmUsIwc9D14FJk78Jh5QvSEPKPsMbq5jgZ35oXI.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Cụ thể doanh nghiệp có thể tiết kiệm thời gian và làm việc nhanh hơn nhờ vào thiết kế BOM và các công đoạn việc chi tiết. Khi doanh nghiệp đã chuẩn bị đầy đủ BOM và công đoạn thì thời gian tính toán nguyên vật liệu cần thiết, lên kế hoạch sản xuất chi tiết, tổng thể sẽ được tự động hóa trên phần mềm. Từ đó, thời gian mua hàng, thời gian trong từng công đoạn sản xuất sẽ được giảm xuống đáng kể.</p>
+        <p>Tóm lại, trên đây là những lý do mà định mức nguyên vật liệu (BOM) có thể góp phần cải thiện quá trình quản trị sản xuất mà bạn nên cần biết. FOSO mong rằng những thông tin trên sẽ hữu ích và giúp bạn cải thiện tốt hơn trong quá trình quản trị sản xuất.</p>
+        `,
       author: {
         id: 4,
         name: "Phạm Thị D",
@@ -175,8 +254,26 @@ export const DUMMY_BLOG_DATA = {
       slug: "5-ngon-ngu-lap-trinh-pho-bien-nhat-2025",
       excerpt:
         "Tìm hiểu về những ngôn ngữ lập trình đang được ưa chuộng nhất và tại sao bạn nên học chúng.",
-      content:
-        "Thế giới lập trình liên tục phát triển, vì vậy việc chọn đúng ngôn ngữ để học là điều cần thiết cho sự phát triển nghề nghiệp của bạn. Dựa trên xu hướng thị trường, nhu cầu của ngành và mức lương, chúng tôi đã xác định 5 ngôn ngữ lập trình hàng đầu đáng để học trong năm 2025. Từ Python đa năng đến Rust tập trung vào hiệu suất, danh sách này cung cấp sự cân bằng giữa các lựa chọn đã được thiết lập và các ngôn ngữ đang nổi lên...",
+      content: `
+        <p>BOM (Bill of materials) có nghĩa là định mức nguyên vật liệu. BOM là một danh sách các nguyên liệu thô, thành phần hay linh kiện cần thiết trong quá trình sản xuất ra thành phẩm hoàn chỉnh</p>
+        <p><img alt="" src="test" /><img alt="" src="https://job-api.satek.vn/storage/editor/TLP9wPh3jouOnJoHSqdPt1Pa7W1Dnu9V7joenLwF.png" style="width: 1940px; height: 1456px;" />BOM được xem cơ sở quan trọng trong tính toán, kiểm tra chi tiết quá trình hoạt động sản xuất tổng thể hay chi tiết của doanh nghiệp. Và bạn cần hiểu rõ BOM bởi BOM sẽ mang lại những lợi ích cho nhà sản xuất như sau:</p>
+        <h2><b>Cải thiện tiến độ trong quản lý sản xuất</b></h2>
+        <p>Thông thường khi một nhà sản xuất không có kế hoạch sản xuất tổng thể hay chi tiết rõ ràng, họ thường chỉ sẽ lên một kế hoạch sản xuất cơ bản. Kế hoạch sản xuất này chỉ dự tính được số lượng nguyên vật liệu chung hay máy móc cần thiết để hoàn thiện sản phẩm.</p>
+        <p>Tuy nhiên, nếu doanh nghiệp thiết kế định mức nguyên vật liệu (BOM) kết hợp cùng với từng công đoạn chi tiết, doanh nghiệp sẽ tính toán được chi tiết trong từng thành phẩm sẽ có bao nhiêu bán thành phẩm và trong từng bán thành phẩm có bao nhiêu công đoạn. Và trong mỗi công đoạn cần có số lượng nguyên vật liệu là bao nhiêu để hoàn thiện một sản phẩm.</p>
+        <h2><b>Cải thiện tiến độ trong quản lý sản xuất</b></h2>
+        <p>Thông thường khi một nhà sản xuất không có kế hoạch sản xuất tổng thể hay chi tiết rõ ràng, họ thường chỉ sẽ lên một kế hoạch sản xuất cơ bản. Kế hoạch sản xuất này chỉ dự tính được số lượng nguyên vật liệu chung hay máy móc cần thiết để hoàn thiện sản phẩm.</p>
+        <p>Tuy nhiên, nếu doanh nghiệp thiết kế định mức nguyên vật liệu (BOM) kết hợp cùng với từng công đoạn chi tiết, doanh nghiệp sẽ tính toán được chi tiết trong từng thành phẩm sẽ có bao nhiêu bán thành phẩm và trong từng bán thành phẩm có bao nhiêu công đoạn. Và trong mỗi công đoạn cần có số lượng nguyên vật liệu là bao nhiêu để hoàn thiện một sản phẩm.</p>
+        <p><img alt="" src="https://job-api.satek.vn/storage/editor/dJdcYLuC1dsaCPkJrJxhwfOnhDbiVHiF2rJxeyjM.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Nếu doanh nghiệp không lên kế hoạch chi tiết như vậy, có thể dẫn đến trường hợp nhà sản xuất sẽ mua đầy đủ nguyên vật liệu chung cho một thành phẩm để tiến hành sản xuất. Điều này sẽ khiến thời gian sản xuất kéo dài nếu như quá trình mua nguyên vật liệu không đáp ứng kịp thời tiến độ sản xuất.</p>
+        <p>Do đó, nếu như nhà sản xuất có thể biết được định mức nguyên vật liệu và phân chia theo từng giai đoạn, doanh nghiệp có thể sản xuất các bán thành phẩm với những nguyên liệu có sẵn trước và khi các nguyên vật liệu khác được nhập về sẽ tiếp tục quy trình sản xuất còn lại và không gây gián đoạn tiến độ sản xuất.</p>
+        <h2><b>Giảm chi phí sản xuất</b></h2>
+        <p>Hơn nữa, khi doanh nghiệp không tính toán chi tiết rõ số lượng nguyên vật liệu cho từng bán thành phẩm, từng sản phẩm, doanh nghiệp có thể mua với số lượng lớn nguyên vật liệu và dẫn đến dư thừa trong sản xuất.<img alt="" src="https://job-api.satek.vn/storage/editor/sVDLBUrJxmT2N5o0j7pMZnEebJreRlBkULnSjxVc.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Điều này không những làm tăng chi phí sản xuất mà còn làm tăng chi phí quản lý kho. Vì vậy, nếu doanh nghiệp tính toán được chính xác định mức nguyên vật liệu (BOM), doanh nghiệp sẽ giảm được chi phí đáng kể trong cả quá trình sản xuất và quản lý hàng tồn kho.</p>
+        <h2><b>Tiết kiệm thời gian quy trình làm việc</b></h2>
+        <p>Chắc hẳn tiết kiệm thời gian quy trình làm việc giữa các bộ phận là mối quan tâm mà mọi chủ doanh nghiệp đều mong muốn. Mặc dù định mức nguyên vật liệu (BOM) là một chi tiết nhỏ trong tổng thể quá trình sản xuất. Nhưng nếu doanh nghiệp chú trọng vào định mức nguyên vật liệu (BOM) chuẩn xác cùng với công đoạn chi tiết thì doanh nghiệp có thể rút ngắn được thời gian đáng kể.<img alt="" src="https://job-api.satek.vn/storage/editor/9lmUsIwc9D14FJk78Jh5QvSEPKPsMbq5jgZ35oXI.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Cụ thể doanh nghiệp có thể tiết kiệm thời gian và làm việc nhanh hơn nhờ vào thiết kế BOM và các công đoạn việc chi tiết. Khi doanh nghiệp đã chuẩn bị đầy đủ BOM và công đoạn thì thời gian tính toán nguyên vật liệu cần thiết, lên kế hoạch sản xuất chi tiết, tổng thể sẽ được tự động hóa trên phần mềm. Từ đó, thời gian mua hàng, thời gian trong từng công đoạn sản xuất sẽ được giảm xuống đáng kể.</p>
+        <p>Tóm lại, trên đây là những lý do mà định mức nguyên vật liệu (BOM) có thể góp phần cải thiện quá trình quản trị sản xuất mà bạn nên cần biết. FOSO mong rằng những thông tin trên sẽ hữu ích và giúp bạn cải thiện tốt hơn trong quá trình quản trị sản xuất.</p>
+        `,
       author: {
         id: 5,
         name: "Hoàng Văn E",
@@ -204,8 +301,26 @@ export const DUMMY_BLOG_DATA = {
       slug: "chien-luoc-marketing-hieu-qua-doanh-nghiep-nho-2025",
       excerpt:
         "Khám phá các chiến lược marketing chi phí thấp nhưng hiệu quả cao dành cho doanh nghiệp nhỏ.",
-      content:
-        "Marketing hiệu quả không nhất thiết phải tốn kém. Đặc biệt đối với các doanh nghiệp nhỏ với ngân sách hạn chế, việc tìm ra các chiến lược marketing sáng tạo và tiết kiệm chi phí là rất quan trọng. Bài viết này chia sẻ 10 chiến lược marketing đã được chứng minh mà các doanh nghiệp nhỏ có thể triển khai trong năm 2025 để tăng khả năng hiển thị, thu hút khách hàng tiềm năng và thúc đẩy tăng trưởng. Từ tiếp thị nội dung đến tận dụng mạng xã hội và email marketing, những chiến lược này sẽ giúp doanh nghiệp của bạn cạnh tranh hiệu quả với các đối thủ lớn hơn...",
+      content: `
+        <p>BOM (Bill of materials) có nghĩa là định mức nguyên vật liệu. BOM là một danh sách các nguyên liệu thô, thành phần hay linh kiện cần thiết trong quá trình sản xuất ra thành phẩm hoàn chỉnh</p>
+        <p><img alt="" src="test" /><img alt="" src="https://job-api.satek.vn/storage/editor/TLP9wPh3jouOnJoHSqdPt1Pa7W1Dnu9V7joenLwF.png" style="width: 1940px; height: 1456px;" />BOM được xem cơ sở quan trọng trong tính toán, kiểm tra chi tiết quá trình hoạt động sản xuất tổng thể hay chi tiết của doanh nghiệp. Và bạn cần hiểu rõ BOM bởi BOM sẽ mang lại những lợi ích cho nhà sản xuất như sau:</p>
+        <h2><b>Cải thiện tiến độ trong quản lý sản xuất</b></h2>
+        <p>Thông thường khi một nhà sản xuất không có kế hoạch sản xuất tổng thể hay chi tiết rõ ràng, họ thường chỉ sẽ lên một kế hoạch sản xuất cơ bản. Kế hoạch sản xuất này chỉ dự tính được số lượng nguyên vật liệu chung hay máy móc cần thiết để hoàn thiện sản phẩm.</p>
+        <p>Tuy nhiên, nếu doanh nghiệp thiết kế định mức nguyên vật liệu (BOM) kết hợp cùng với từng công đoạn chi tiết, doanh nghiệp sẽ tính toán được chi tiết trong từng thành phẩm sẽ có bao nhiêu bán thành phẩm và trong từng bán thành phẩm có bao nhiêu công đoạn. Và trong mỗi công đoạn cần có số lượng nguyên vật liệu là bao nhiêu để hoàn thiện một sản phẩm.</p>
+        <h2><b>Cải thiện tiến độ trong quản lý sản xuất</b></h2>
+        <p>Thông thường khi một nhà sản xuất không có kế hoạch sản xuất tổng thể hay chi tiết rõ ràng, họ thường chỉ sẽ lên một kế hoạch sản xuất cơ bản. Kế hoạch sản xuất này chỉ dự tính được số lượng nguyên vật liệu chung hay máy móc cần thiết để hoàn thiện sản phẩm.</p>
+        <p>Tuy nhiên, nếu doanh nghiệp thiết kế định mức nguyên vật liệu (BOM) kết hợp cùng với từng công đoạn chi tiết, doanh nghiệp sẽ tính toán được chi tiết trong từng thành phẩm sẽ có bao nhiêu bán thành phẩm và trong từng bán thành phẩm có bao nhiêu công đoạn. Và trong mỗi công đoạn cần có số lượng nguyên vật liệu là bao nhiêu để hoàn thiện một sản phẩm.</p>
+        <p><img alt="" src="https://job-api.satek.vn/storage/editor/dJdcYLuC1dsaCPkJrJxhwfOnhDbiVHiF2rJxeyjM.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Nếu doanh nghiệp không lên kế hoạch chi tiết như vậy, có thể dẫn đến trường hợp nhà sản xuất sẽ mua đầy đủ nguyên vật liệu chung cho một thành phẩm để tiến hành sản xuất. Điều này sẽ khiến thời gian sản xuất kéo dài nếu như quá trình mua nguyên vật liệu không đáp ứng kịp thời tiến độ sản xuất.</p>
+        <p>Do đó, nếu như nhà sản xuất có thể biết được định mức nguyên vật liệu và phân chia theo từng giai đoạn, doanh nghiệp có thể sản xuất các bán thành phẩm với những nguyên liệu có sẵn trước và khi các nguyên vật liệu khác được nhập về sẽ tiếp tục quy trình sản xuất còn lại và không gây gián đoạn tiến độ sản xuất.</p>
+        <h2><b>Giảm chi phí sản xuất</b></h2>
+        <p>Hơn nữa, khi doanh nghiệp không tính toán chi tiết rõ số lượng nguyên vật liệu cho từng bán thành phẩm, từng sản phẩm, doanh nghiệp có thể mua với số lượng lớn nguyên vật liệu và dẫn đến dư thừa trong sản xuất.<img alt="" src="https://job-api.satek.vn/storage/editor/sVDLBUrJxmT2N5o0j7pMZnEebJreRlBkULnSjxVc.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Điều này không những làm tăng chi phí sản xuất mà còn làm tăng chi phí quản lý kho. Vì vậy, nếu doanh nghiệp tính toán được chính xác định mức nguyên vật liệu (BOM), doanh nghiệp sẽ giảm được chi phí đáng kể trong cả quá trình sản xuất và quản lý hàng tồn kho.</p>
+        <h2><b>Tiết kiệm thời gian quy trình làm việc</b></h2>
+        <p>Chắc hẳn tiết kiệm thời gian quy trình làm việc giữa các bộ phận là mối quan tâm mà mọi chủ doanh nghiệp đều mong muốn. Mặc dù định mức nguyên vật liệu (BOM) là một chi tiết nhỏ trong tổng thể quá trình sản xuất. Nhưng nếu doanh nghiệp chú trọng vào định mức nguyên vật liệu (BOM) chuẩn xác cùng với công đoạn chi tiết thì doanh nghiệp có thể rút ngắn được thời gian đáng kể.<img alt="" src="https://job-api.satek.vn/storage/editor/9lmUsIwc9D14FJk78Jh5QvSEPKPsMbq5jgZ35oXI.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Cụ thể doanh nghiệp có thể tiết kiệm thời gian và làm việc nhanh hơn nhờ vào thiết kế BOM và các công đoạn việc chi tiết. Khi doanh nghiệp đã chuẩn bị đầy đủ BOM và công đoạn thì thời gian tính toán nguyên vật liệu cần thiết, lên kế hoạch sản xuất chi tiết, tổng thể sẽ được tự động hóa trên phần mềm. Từ đó, thời gian mua hàng, thời gian trong từng công đoạn sản xuất sẽ được giảm xuống đáng kể.</p>
+        <p>Tóm lại, trên đây là những lý do mà định mức nguyên vật liệu (BOM) có thể góp phần cải thiện quá trình quản trị sản xuất mà bạn nên cần biết. FOSO mong rằng những thông tin trên sẽ hữu ích và giúp bạn cải thiện tốt hơn trong quá trình quản trị sản xuất.</p>
+        `,
       author: {
         id: 6,
         name: "Nguyễn Thị F",
@@ -230,8 +345,26 @@ export const DUMMY_BLOG_DATA = {
       slug: "cach-huy-dong-von-cho-startup-huong-dan-toan-dien",
       excerpt:
         "Tìm hiểu các phương pháp khác nhau để huy động vốn cho doanh nghiệp khởi nghiệp và cách chọn phương pháp phù hợp nhất.",
-      content:
-        "Huy động vốn là một trong những thách thức lớn nhất mà các nhà sáng lập startup phải đối mặt. Từ bootstrap đến venture capital, có nhiều cách khác nhau để tài trợ cho doanh nghiệp của bạn, mỗi cách đều có ưu và nhược điểm riêng. Hướng dẫn này sẽ giúp bạn hiểu rõ về các tùy chọn huy động vốn khác nhau, từ giai đoạn hạt giống đến Series A và hơn thế nữa. Chúng tôi cũng sẽ chia sẻ lời khuyên về cách chuẩn bị pitch deck, đàm phán điều khoản và xây dựng mối quan hệ với các nhà đầu tư...",
+      content: `
+        <p>BOM (Bill of materials) có nghĩa là định mức nguyên vật liệu. BOM là một danh sách các nguyên liệu thô, thành phần hay linh kiện cần thiết trong quá trình sản xuất ra thành phẩm hoàn chỉnh</p>
+        <p><img alt="" src="test" /><img alt="" src="https://job-api.satek.vn/storage/editor/TLP9wPh3jouOnJoHSqdPt1Pa7W1Dnu9V7joenLwF.png" style="width: 1940px; height: 1456px;" />BOM được xem cơ sở quan trọng trong tính toán, kiểm tra chi tiết quá trình hoạt động sản xuất tổng thể hay chi tiết của doanh nghiệp. Và bạn cần hiểu rõ BOM bởi BOM sẽ mang lại những lợi ích cho nhà sản xuất như sau:</p>
+        <h2><b>Cải thiện tiến độ trong quản lý sản xuất</b></h2>
+        <p>Thông thường khi một nhà sản xuất không có kế hoạch sản xuất tổng thể hay chi tiết rõ ràng, họ thường chỉ sẽ lên một kế hoạch sản xuất cơ bản. Kế hoạch sản xuất này chỉ dự tính được số lượng nguyên vật liệu chung hay máy móc cần thiết để hoàn thiện sản phẩm.</p>
+        <p>Tuy nhiên, nếu doanh nghiệp thiết kế định mức nguyên vật liệu (BOM) kết hợp cùng với từng công đoạn chi tiết, doanh nghiệp sẽ tính toán được chi tiết trong từng thành phẩm sẽ có bao nhiêu bán thành phẩm và trong từng bán thành phẩm có bao nhiêu công đoạn. Và trong mỗi công đoạn cần có số lượng nguyên vật liệu là bao nhiêu để hoàn thiện một sản phẩm.</p>
+        <h2><b>Cải thiện tiến độ trong quản lý sản xuất</b></h2>
+        <p>Thông thường khi một nhà sản xuất không có kế hoạch sản xuất tổng thể hay chi tiết rõ ràng, họ thường chỉ sẽ lên một kế hoạch sản xuất cơ bản. Kế hoạch sản xuất này chỉ dự tính được số lượng nguyên vật liệu chung hay máy móc cần thiết để hoàn thiện sản phẩm.</p>
+        <p>Tuy nhiên, nếu doanh nghiệp thiết kế định mức nguyên vật liệu (BOM) kết hợp cùng với từng công đoạn chi tiết, doanh nghiệp sẽ tính toán được chi tiết trong từng thành phẩm sẽ có bao nhiêu bán thành phẩm và trong từng bán thành phẩm có bao nhiêu công đoạn. Và trong mỗi công đoạn cần có số lượng nguyên vật liệu là bao nhiêu để hoàn thiện một sản phẩm.</p>
+        <p><img alt="" src="https://job-api.satek.vn/storage/editor/dJdcYLuC1dsaCPkJrJxhwfOnhDbiVHiF2rJxeyjM.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Nếu doanh nghiệp không lên kế hoạch chi tiết như vậy, có thể dẫn đến trường hợp nhà sản xuất sẽ mua đầy đủ nguyên vật liệu chung cho một thành phẩm để tiến hành sản xuất. Điều này sẽ khiến thời gian sản xuất kéo dài nếu như quá trình mua nguyên vật liệu không đáp ứng kịp thời tiến độ sản xuất.</p>
+        <p>Do đó, nếu như nhà sản xuất có thể biết được định mức nguyên vật liệu và phân chia theo từng giai đoạn, doanh nghiệp có thể sản xuất các bán thành phẩm với những nguyên liệu có sẵn trước và khi các nguyên vật liệu khác được nhập về sẽ tiếp tục quy trình sản xuất còn lại và không gây gián đoạn tiến độ sản xuất.</p>
+        <h2><b>Giảm chi phí sản xuất</b></h2>
+        <p>Hơn nữa, khi doanh nghiệp không tính toán chi tiết rõ số lượng nguyên vật liệu cho từng bán thành phẩm, từng sản phẩm, doanh nghiệp có thể mua với số lượng lớn nguyên vật liệu và dẫn đến dư thừa trong sản xuất.<img alt="" src="https://job-api.satek.vn/storage/editor/sVDLBUrJxmT2N5o0j7pMZnEebJreRlBkULnSjxVc.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Điều này không những làm tăng chi phí sản xuất mà còn làm tăng chi phí quản lý kho. Vì vậy, nếu doanh nghiệp tính toán được chính xác định mức nguyên vật liệu (BOM), doanh nghiệp sẽ giảm được chi phí đáng kể trong cả quá trình sản xuất và quản lý hàng tồn kho.</p>
+        <h2><b>Tiết kiệm thời gian quy trình làm việc</b></h2>
+        <p>Chắc hẳn tiết kiệm thời gian quy trình làm việc giữa các bộ phận là mối quan tâm mà mọi chủ doanh nghiệp đều mong muốn. Mặc dù định mức nguyên vật liệu (BOM) là một chi tiết nhỏ trong tổng thể quá trình sản xuất. Nhưng nếu doanh nghiệp chú trọng vào định mức nguyên vật liệu (BOM) chuẩn xác cùng với công đoạn chi tiết thì doanh nghiệp có thể rút ngắn được thời gian đáng kể.<img alt="" src="https://job-api.satek.vn/storage/editor/9lmUsIwc9D14FJk78Jh5QvSEPKPsMbq5jgZ35oXI.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Cụ thể doanh nghiệp có thể tiết kiệm thời gian và làm việc nhanh hơn nhờ vào thiết kế BOM và các công đoạn việc chi tiết. Khi doanh nghiệp đã chuẩn bị đầy đủ BOM và công đoạn thì thời gian tính toán nguyên vật liệu cần thiết, lên kế hoạch sản xuất chi tiết, tổng thể sẽ được tự động hóa trên phần mềm. Từ đó, thời gian mua hàng, thời gian trong từng công đoạn sản xuất sẽ được giảm xuống đáng kể.</p>
+        <p>Tóm lại, trên đây là những lý do mà định mức nguyên vật liệu (BOM) có thể góp phần cải thiện quá trình quản trị sản xuất mà bạn nên cần biết. FOSO mong rằng những thông tin trên sẽ hữu ích và giúp bạn cải thiện tốt hơn trong quá trình quản trị sản xuất.</p>
+        `,
       author: {
         id: 7,
         name: "Trần Văn G",
@@ -262,8 +395,26 @@ export const DUMMY_BLOG_DATA = {
       slug: "xu-huong-thuong-mai-dien-tu-dinh-hinh-nganh-2025",
       excerpt:
         "Khám phá những xu hướng thương mại điện tử mới nổi và cách chuẩn bị cho doanh nghiệp của bạn.",
-      content:
-        "Thương mại điện tử tiếp tục phát triển với tốc độ chóng mặt, được thúc đẩy bởi công nghệ mới, thay đổi hành vi người tiêu dùng và sự gián đoạn của ngành. Bài viết này phân tích 7 xu hướng thương mại điện tử quan trọng nhất sẽ định hình ngành vào năm 2025, bao gồm thương mại xã hội, mua sắm dựa trên AR/VR, tính bền vững và thương mại không tiếp xúc. Chúng tôi cũng cung cấp những hiểu biết thực tế về cách các doanh nghiệp thương mại điện tử có thể tận dụng những xu hướng này để thu hút khách hàng, tăng doanh số bán hàng và đi trước đối thủ cạnh tranh...",
+      content: `
+        <p>BOM (Bill of materials) có nghĩa là định mức nguyên vật liệu. BOM là một danh sách các nguyên liệu thô, thành phần hay linh kiện cần thiết trong quá trình sản xuất ra thành phẩm hoàn chỉnh</p>
+        <p><img alt="" src="test" /><img alt="" src="https://job-api.satek.vn/storage/editor/TLP9wPh3jouOnJoHSqdPt1Pa7W1Dnu9V7joenLwF.png" style="width: 1940px; height: 1456px;" />BOM được xem cơ sở quan trọng trong tính toán, kiểm tra chi tiết quá trình hoạt động sản xuất tổng thể hay chi tiết của doanh nghiệp. Và bạn cần hiểu rõ BOM bởi BOM sẽ mang lại những lợi ích cho nhà sản xuất như sau:</p>
+        <h2><b>Cải thiện tiến độ trong quản lý sản xuất</b></h2>
+        <p>Thông thường khi một nhà sản xuất không có kế hoạch sản xuất tổng thể hay chi tiết rõ ràng, họ thường chỉ sẽ lên một kế hoạch sản xuất cơ bản. Kế hoạch sản xuất này chỉ dự tính được số lượng nguyên vật liệu chung hay máy móc cần thiết để hoàn thiện sản phẩm.</p>
+        <p>Tuy nhiên, nếu doanh nghiệp thiết kế định mức nguyên vật liệu (BOM) kết hợp cùng với từng công đoạn chi tiết, doanh nghiệp sẽ tính toán được chi tiết trong từng thành phẩm sẽ có bao nhiêu bán thành phẩm và trong từng bán thành phẩm có bao nhiêu công đoạn. Và trong mỗi công đoạn cần có số lượng nguyên vật liệu là bao nhiêu để hoàn thiện một sản phẩm.</p>
+        <h2><b>Cải thiện tiến độ trong quản lý sản xuất</b></h2>
+        <p>Thông thường khi một nhà sản xuất không có kế hoạch sản xuất tổng thể hay chi tiết rõ ràng, họ thường chỉ sẽ lên một kế hoạch sản xuất cơ bản. Kế hoạch sản xuất này chỉ dự tính được số lượng nguyên vật liệu chung hay máy móc cần thiết để hoàn thiện sản phẩm.</p>
+        <p>Tuy nhiên, nếu doanh nghiệp thiết kế định mức nguyên vật liệu (BOM) kết hợp cùng với từng công đoạn chi tiết, doanh nghiệp sẽ tính toán được chi tiết trong từng thành phẩm sẽ có bao nhiêu bán thành phẩm và trong từng bán thành phẩm có bao nhiêu công đoạn. Và trong mỗi công đoạn cần có số lượng nguyên vật liệu là bao nhiêu để hoàn thiện một sản phẩm.</p>
+        <p><img alt="" src="https://job-api.satek.vn/storage/editor/dJdcYLuC1dsaCPkJrJxhwfOnhDbiVHiF2rJxeyjM.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Nếu doanh nghiệp không lên kế hoạch chi tiết như vậy, có thể dẫn đến trường hợp nhà sản xuất sẽ mua đầy đủ nguyên vật liệu chung cho một thành phẩm để tiến hành sản xuất. Điều này sẽ khiến thời gian sản xuất kéo dài nếu như quá trình mua nguyên vật liệu không đáp ứng kịp thời tiến độ sản xuất.</p>
+        <p>Do đó, nếu như nhà sản xuất có thể biết được định mức nguyên vật liệu và phân chia theo từng giai đoạn, doanh nghiệp có thể sản xuất các bán thành phẩm với những nguyên liệu có sẵn trước và khi các nguyên vật liệu khác được nhập về sẽ tiếp tục quy trình sản xuất còn lại và không gây gián đoạn tiến độ sản xuất.</p>
+        <h2><b>Giảm chi phí sản xuất</b></h2>
+        <p>Hơn nữa, khi doanh nghiệp không tính toán chi tiết rõ số lượng nguyên vật liệu cho từng bán thành phẩm, từng sản phẩm, doanh nghiệp có thể mua với số lượng lớn nguyên vật liệu và dẫn đến dư thừa trong sản xuất.<img alt="" src="https://job-api.satek.vn/storage/editor/sVDLBUrJxmT2N5o0j7pMZnEebJreRlBkULnSjxVc.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Điều này không những làm tăng chi phí sản xuất mà còn làm tăng chi phí quản lý kho. Vì vậy, nếu doanh nghiệp tính toán được chính xác định mức nguyên vật liệu (BOM), doanh nghiệp sẽ giảm được chi phí đáng kể trong cả quá trình sản xuất và quản lý hàng tồn kho.</p>
+        <h2><b>Tiết kiệm thời gian quy trình làm việc</b></h2>
+        <p>Chắc hẳn tiết kiệm thời gian quy trình làm việc giữa các bộ phận là mối quan tâm mà mọi chủ doanh nghiệp đều mong muốn. Mặc dù định mức nguyên vật liệu (BOM) là một chi tiết nhỏ trong tổng thể quá trình sản xuất. Nhưng nếu doanh nghiệp chú trọng vào định mức nguyên vật liệu (BOM) chuẩn xác cùng với công đoạn chi tiết thì doanh nghiệp có thể rút ngắn được thời gian đáng kể.<img alt="" src="https://job-api.satek.vn/storage/editor/9lmUsIwc9D14FJk78Jh5QvSEPKPsMbq5jgZ35oXI.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Cụ thể doanh nghiệp có thể tiết kiệm thời gian và làm việc nhanh hơn nhờ vào thiết kế BOM và các công đoạn việc chi tiết. Khi doanh nghiệp đã chuẩn bị đầy đủ BOM và công đoạn thì thời gian tính toán nguyên vật liệu cần thiết, lên kế hoạch sản xuất chi tiết, tổng thể sẽ được tự động hóa trên phần mềm. Từ đó, thời gian mua hàng, thời gian trong từng công đoạn sản xuất sẽ được giảm xuống đáng kể.</p>
+        <p>Tóm lại, trên đây là những lý do mà định mức nguyên vật liệu (BOM) có thể góp phần cải thiện quá trình quản trị sản xuất mà bạn nên cần biết. FOSO mong rằng những thông tin trên sẽ hữu ích và giúp bạn cải thiện tốt hơn trong quá trình quản trị sản xuất.</p>
+        `,
       author: {
         id: 8,
         name: "Lê Thị H",
@@ -295,8 +446,26 @@ export const DUMMY_BLOG_DATA = {
       slug: "cach-cai-thien-su-hai-long-cua-khach-hang",
       excerpt:
         "Chiến lược và mẹo thiết thực để nâng cao trải nghiệm khách hàng và xây dựng lòng trung thành.",
-      content:
-        "Việc thu hút khách hàng mới rất tốn kém, vì vậy việc giữ chân khách hàng hiện tại là điều cần thiết cho sự phát triển kinh doanh bền vững. Bài viết này khám phá các chiến lược đã được chứng minh để cải thiện sự hài lòng của khách hàng, tạo ra trải nghiệm xuất sắc và xây dựng lòng trung thành lâu dài. Từ cá nhân hóa đến dịch vụ khách hàng chủ động và các chương trình khách hàng thân thiết, chúng tôi chia sẻ các phương pháp hay nhất có thể áp dụng cho doanh nghiệp ở mọi quy mô...",
+      content: `
+        <p>BOM (Bill of materials) có nghĩa là định mức nguyên vật liệu. BOM là một danh sách các nguyên liệu thô, thành phần hay linh kiện cần thiết trong quá trình sản xuất ra thành phẩm hoàn chỉnh</p>
+        <p><img alt="" src="test" /><img alt="" src="https://job-api.satek.vn/storage/editor/TLP9wPh3jouOnJoHSqdPt1Pa7W1Dnu9V7joenLwF.png" style="width: 1940px; height: 1456px;" />BOM được xem cơ sở quan trọng trong tính toán, kiểm tra chi tiết quá trình hoạt động sản xuất tổng thể hay chi tiết của doanh nghiệp. Và bạn cần hiểu rõ BOM bởi BOM sẽ mang lại những lợi ích cho nhà sản xuất như sau:</p>
+        <h2><b>Cải thiện tiến độ trong quản lý sản xuất</b></h2>
+        <p>Thông thường khi một nhà sản xuất không có kế hoạch sản xuất tổng thể hay chi tiết rõ ràng, họ thường chỉ sẽ lên một kế hoạch sản xuất cơ bản. Kế hoạch sản xuất này chỉ dự tính được số lượng nguyên vật liệu chung hay máy móc cần thiết để hoàn thiện sản phẩm.</p>
+        <p>Tuy nhiên, nếu doanh nghiệp thiết kế định mức nguyên vật liệu (BOM) kết hợp cùng với từng công đoạn chi tiết, doanh nghiệp sẽ tính toán được chi tiết trong từng thành phẩm sẽ có bao nhiêu bán thành phẩm và trong từng bán thành phẩm có bao nhiêu công đoạn. Và trong mỗi công đoạn cần có số lượng nguyên vật liệu là bao nhiêu để hoàn thiện một sản phẩm.</p>
+        <h2><b>Cải thiện tiến độ trong quản lý sản xuất</b></h2>
+        <p>Thông thường khi một nhà sản xuất không có kế hoạch sản xuất tổng thể hay chi tiết rõ ràng, họ thường chỉ sẽ lên một kế hoạch sản xuất cơ bản. Kế hoạch sản xuất này chỉ dự tính được số lượng nguyên vật liệu chung hay máy móc cần thiết để hoàn thiện sản phẩm.</p>
+        <p>Tuy nhiên, nếu doanh nghiệp thiết kế định mức nguyên vật liệu (BOM) kết hợp cùng với từng công đoạn chi tiết, doanh nghiệp sẽ tính toán được chi tiết trong từng thành phẩm sẽ có bao nhiêu bán thành phẩm và trong từng bán thành phẩm có bao nhiêu công đoạn. Và trong mỗi công đoạn cần có số lượng nguyên vật liệu là bao nhiêu để hoàn thiện một sản phẩm.</p>
+        <p><img alt="" src="https://job-api.satek.vn/storage/editor/dJdcYLuC1dsaCPkJrJxhwfOnhDbiVHiF2rJxeyjM.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Nếu doanh nghiệp không lên kế hoạch chi tiết như vậy, có thể dẫn đến trường hợp nhà sản xuất sẽ mua đầy đủ nguyên vật liệu chung cho một thành phẩm để tiến hành sản xuất. Điều này sẽ khiến thời gian sản xuất kéo dài nếu như quá trình mua nguyên vật liệu không đáp ứng kịp thời tiến độ sản xuất.</p>
+        <p>Do đó, nếu như nhà sản xuất có thể biết được định mức nguyên vật liệu và phân chia theo từng giai đoạn, doanh nghiệp có thể sản xuất các bán thành phẩm với những nguyên liệu có sẵn trước và khi các nguyên vật liệu khác được nhập về sẽ tiếp tục quy trình sản xuất còn lại và không gây gián đoạn tiến độ sản xuất.</p>
+        <h2><b>Giảm chi phí sản xuất</b></h2>
+        <p>Hơn nữa, khi doanh nghiệp không tính toán chi tiết rõ số lượng nguyên vật liệu cho từng bán thành phẩm, từng sản phẩm, doanh nghiệp có thể mua với số lượng lớn nguyên vật liệu và dẫn đến dư thừa trong sản xuất.<img alt="" src="https://job-api.satek.vn/storage/editor/sVDLBUrJxmT2N5o0j7pMZnEebJreRlBkULnSjxVc.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Điều này không những làm tăng chi phí sản xuất mà còn làm tăng chi phí quản lý kho. Vì vậy, nếu doanh nghiệp tính toán được chính xác định mức nguyên vật liệu (BOM), doanh nghiệp sẽ giảm được chi phí đáng kể trong cả quá trình sản xuất và quản lý hàng tồn kho.</p>
+        <h2><b>Tiết kiệm thời gian quy trình làm việc</b></h2>
+        <p>Chắc hẳn tiết kiệm thời gian quy trình làm việc giữa các bộ phận là mối quan tâm mà mọi chủ doanh nghiệp đều mong muốn. Mặc dù định mức nguyên vật liệu (BOM) là một chi tiết nhỏ trong tổng thể quá trình sản xuất. Nhưng nếu doanh nghiệp chú trọng vào định mức nguyên vật liệu (BOM) chuẩn xác cùng với công đoạn chi tiết thì doanh nghiệp có thể rút ngắn được thời gian đáng kể.<img alt="" src="https://job-api.satek.vn/storage/editor/9lmUsIwc9D14FJk78Jh5QvSEPKPsMbq5jgZ35oXI.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Cụ thể doanh nghiệp có thể tiết kiệm thời gian và làm việc nhanh hơn nhờ vào thiết kế BOM và các công đoạn việc chi tiết. Khi doanh nghiệp đã chuẩn bị đầy đủ BOM và công đoạn thì thời gian tính toán nguyên vật liệu cần thiết, lên kế hoạch sản xuất chi tiết, tổng thể sẽ được tự động hóa trên phần mềm. Từ đó, thời gian mua hàng, thời gian trong từng công đoạn sản xuất sẽ được giảm xuống đáng kể.</p>
+        <p>Tóm lại, trên đây là những lý do mà định mức nguyên vật liệu (BOM) có thể góp phần cải thiện quá trình quản trị sản xuất mà bạn nên cần biết. FOSO mong rằng những thông tin trên sẽ hữu ích và giúp bạn cải thiện tốt hơn trong quá trình quản trị sản xuất.</p>
+        `,
       author: {
         id: 9,
         name: "Phạm Văn I",
@@ -330,8 +499,26 @@ export const DUMMY_BLOG_DATA = {
       slug: "xay-dung-thoi-quen-an-uong-lanh-manh",
       excerpt:
         "Khám phá cách tiếp cận cân bằng đối với dinh dưỡng giúp bạn ăn uống lành mạnh đồng thời vẫn tận hưởng những món ăn yêu thích.",
-      content:
-        "Việc ăn uống lành mạnh không có nghĩa là phải từ bỏ những món ăn bạn yêu thích hoặc tuân theo chế độ ăn kiêng hà khắc. Thay vào đó, đó là về việc tìm ra sự cân bằng bền vững và phát triển một mối quan hệ tích cực với thực phẩm. Bài viết này chia sẻ 8 chiến lược thiết thực để tạo ra những thói quen ăn uống lành mạnh và bền vững, bao gồm kế hoạch bữa ăn, chế biến thực phẩm, ăn uống có ý thức và cách kết hợp những món ăn ưa thích một cách có trách nhiệm. Với những lời khuyên này, bạn có thể đạt được mục tiêu dinh dưỡng mà không cảm thấy bị tước đoạt...",
+      content: `
+        <p>BOM (Bill of materials) có nghĩa là định mức nguyên vật liệu. BOM là một danh sách các nguyên liệu thô, thành phần hay linh kiện cần thiết trong quá trình sản xuất ra thành phẩm hoàn chỉnh</p>
+        <p><img alt="" src="test" /><img alt="" src="https://job-api.satek.vn/storage/editor/TLP9wPh3jouOnJoHSqdPt1Pa7W1Dnu9V7joenLwF.png" style="width: 1940px; height: 1456px;" />BOM được xem cơ sở quan trọng trong tính toán, kiểm tra chi tiết quá trình hoạt động sản xuất tổng thể hay chi tiết của doanh nghiệp. Và bạn cần hiểu rõ BOM bởi BOM sẽ mang lại những lợi ích cho nhà sản xuất như sau:</p>
+        <h2><b>Cải thiện tiến độ trong quản lý sản xuất</b></h2>
+        <p>Thông thường khi một nhà sản xuất không có kế hoạch sản xuất tổng thể hay chi tiết rõ ràng, họ thường chỉ sẽ lên một kế hoạch sản xuất cơ bản. Kế hoạch sản xuất này chỉ dự tính được số lượng nguyên vật liệu chung hay máy móc cần thiết để hoàn thiện sản phẩm.</p>
+        <p>Tuy nhiên, nếu doanh nghiệp thiết kế định mức nguyên vật liệu (BOM) kết hợp cùng với từng công đoạn chi tiết, doanh nghiệp sẽ tính toán được chi tiết trong từng thành phẩm sẽ có bao nhiêu bán thành phẩm và trong từng bán thành phẩm có bao nhiêu công đoạn. Và trong mỗi công đoạn cần có số lượng nguyên vật liệu là bao nhiêu để hoàn thiện một sản phẩm.</p>
+        <h2><b>Cải thiện tiến độ trong quản lý sản xuất</b></h2>
+        <p>Thông thường khi một nhà sản xuất không có kế hoạch sản xuất tổng thể hay chi tiết rõ ràng, họ thường chỉ sẽ lên một kế hoạch sản xuất cơ bản. Kế hoạch sản xuất này chỉ dự tính được số lượng nguyên vật liệu chung hay máy móc cần thiết để hoàn thiện sản phẩm.</p>
+        <p>Tuy nhiên, nếu doanh nghiệp thiết kế định mức nguyên vật liệu (BOM) kết hợp cùng với từng công đoạn chi tiết, doanh nghiệp sẽ tính toán được chi tiết trong từng thành phẩm sẽ có bao nhiêu bán thành phẩm và trong từng bán thành phẩm có bao nhiêu công đoạn. Và trong mỗi công đoạn cần có số lượng nguyên vật liệu là bao nhiêu để hoàn thiện một sản phẩm.</p>
+        <p><img alt="" src="https://job-api.satek.vn/storage/editor/dJdcYLuC1dsaCPkJrJxhwfOnhDbiVHiF2rJxeyjM.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Nếu doanh nghiệp không lên kế hoạch chi tiết như vậy, có thể dẫn đến trường hợp nhà sản xuất sẽ mua đầy đủ nguyên vật liệu chung cho một thành phẩm để tiến hành sản xuất. Điều này sẽ khiến thời gian sản xuất kéo dài nếu như quá trình mua nguyên vật liệu không đáp ứng kịp thời tiến độ sản xuất.</p>
+        <p>Do đó, nếu như nhà sản xuất có thể biết được định mức nguyên vật liệu và phân chia theo từng giai đoạn, doanh nghiệp có thể sản xuất các bán thành phẩm với những nguyên liệu có sẵn trước và khi các nguyên vật liệu khác được nhập về sẽ tiếp tục quy trình sản xuất còn lại và không gây gián đoạn tiến độ sản xuất.</p>
+        <h2><b>Giảm chi phí sản xuất</b></h2>
+        <p>Hơn nữa, khi doanh nghiệp không tính toán chi tiết rõ số lượng nguyên vật liệu cho từng bán thành phẩm, từng sản phẩm, doanh nghiệp có thể mua với số lượng lớn nguyên vật liệu và dẫn đến dư thừa trong sản xuất.<img alt="" src="https://job-api.satek.vn/storage/editor/sVDLBUrJxmT2N5o0j7pMZnEebJreRlBkULnSjxVc.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Điều này không những làm tăng chi phí sản xuất mà còn làm tăng chi phí quản lý kho. Vì vậy, nếu doanh nghiệp tính toán được chính xác định mức nguyên vật liệu (BOM), doanh nghiệp sẽ giảm được chi phí đáng kể trong cả quá trình sản xuất và quản lý hàng tồn kho.</p>
+        <h2><b>Tiết kiệm thời gian quy trình làm việc</b></h2>
+        <p>Chắc hẳn tiết kiệm thời gian quy trình làm việc giữa các bộ phận là mối quan tâm mà mọi chủ doanh nghiệp đều mong muốn. Mặc dù định mức nguyên vật liệu (BOM) là một chi tiết nhỏ trong tổng thể quá trình sản xuất. Nhưng nếu doanh nghiệp chú trọng vào định mức nguyên vật liệu (BOM) chuẩn xác cùng với công đoạn chi tiết thì doanh nghiệp có thể rút ngắn được thời gian đáng kể.<img alt="" src="https://job-api.satek.vn/storage/editor/9lmUsIwc9D14FJk78Jh5QvSEPKPsMbq5jgZ35oXI.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Cụ thể doanh nghiệp có thể tiết kiệm thời gian và làm việc nhanh hơn nhờ vào thiết kế BOM và các công đoạn việc chi tiết. Khi doanh nghiệp đã chuẩn bị đầy đủ BOM và công đoạn thì thời gian tính toán nguyên vật liệu cần thiết, lên kế hoạch sản xuất chi tiết, tổng thể sẽ được tự động hóa trên phần mềm. Từ đó, thời gian mua hàng, thời gian trong từng công đoạn sản xuất sẽ được giảm xuống đáng kể.</p>
+        <p>Tóm lại, trên đây là những lý do mà định mức nguyên vật liệu (BOM) có thể góp phần cải thiện quá trình quản trị sản xuất mà bạn nên cần biết. FOSO mong rằng những thông tin trên sẽ hữu ích và giúp bạn cải thiện tốt hơn trong quá trình quản trị sản xuất.</p>
+        `,
       author: {
         id: 10,
         name: "Nguyễn Văn J",
@@ -356,8 +543,26 @@ export const DUMMY_BLOG_DATA = {
       slug: "huong-dan-toan-dien-ve-thien-cho-nguoi-moi",
       excerpt:
         "Tìm hiểu cách bắt đầu thực hành thiền và tích hợp nó vào cuộc sống hàng ngày của bạn.",
-      content:
-        "Thiền là một công cụ mạnh mẽ để giảm căng thẳng, cải thiện sự tập trung và nâng cao sức khỏe tinh thần tổng thể. Nhưng đối với người mới bắt đầu, thiền có thể dường như khó tiếp cận hoặc bí ẩn. Hướng dẫn thân thiện với người mới bắt đầu này phá vỡ các khái niệm cơ bản của thiền, các lợi ích được hỗ trợ khoa học và các kỹ thuật thiền đơn giản mà bạn có thể bắt đầu ngay hôm nay. Chúng tôi cũng giải quyết các thách thức phổ biến mà người mới thiền gặp phải và cung cấp lời khuyên thiết thực về cách xây dựng một thói quen thiền bền vững...",
+      content: `
+        <p>BOM (Bill of materials) có nghĩa là định mức nguyên vật liệu. BOM là một danh sách các nguyên liệu thô, thành phần hay linh kiện cần thiết trong quá trình sản xuất ra thành phẩm hoàn chỉnh</p>
+        <p><img alt="" src="test" /><img alt="" src="https://job-api.satek.vn/storage/editor/TLP9wPh3jouOnJoHSqdPt1Pa7W1Dnu9V7joenLwF.png" style="width: 1940px; height: 1456px;" />BOM được xem cơ sở quan trọng trong tính toán, kiểm tra chi tiết quá trình hoạt động sản xuất tổng thể hay chi tiết của doanh nghiệp. Và bạn cần hiểu rõ BOM bởi BOM sẽ mang lại những lợi ích cho nhà sản xuất như sau:</p>
+        <h2><b>Cải thiện tiến độ trong quản lý sản xuất</b></h2>
+        <p>Thông thường khi một nhà sản xuất không có kế hoạch sản xuất tổng thể hay chi tiết rõ ràng, họ thường chỉ sẽ lên một kế hoạch sản xuất cơ bản. Kế hoạch sản xuất này chỉ dự tính được số lượng nguyên vật liệu chung hay máy móc cần thiết để hoàn thiện sản phẩm.</p>
+        <p>Tuy nhiên, nếu doanh nghiệp thiết kế định mức nguyên vật liệu (BOM) kết hợp cùng với từng công đoạn chi tiết, doanh nghiệp sẽ tính toán được chi tiết trong từng thành phẩm sẽ có bao nhiêu bán thành phẩm và trong từng bán thành phẩm có bao nhiêu công đoạn. Và trong mỗi công đoạn cần có số lượng nguyên vật liệu là bao nhiêu để hoàn thiện một sản phẩm.</p>
+        <h2><b>Cải thiện tiến độ trong quản lý sản xuất</b></h2>
+        <p>Thông thường khi một nhà sản xuất không có kế hoạch sản xuất tổng thể hay chi tiết rõ ràng, họ thường chỉ sẽ lên một kế hoạch sản xuất cơ bản. Kế hoạch sản xuất này chỉ dự tính được số lượng nguyên vật liệu chung hay máy móc cần thiết để hoàn thiện sản phẩm.</p>
+        <p>Tuy nhiên, nếu doanh nghiệp thiết kế định mức nguyên vật liệu (BOM) kết hợp cùng với từng công đoạn chi tiết, doanh nghiệp sẽ tính toán được chi tiết trong từng thành phẩm sẽ có bao nhiêu bán thành phẩm và trong từng bán thành phẩm có bao nhiêu công đoạn. Và trong mỗi công đoạn cần có số lượng nguyên vật liệu là bao nhiêu để hoàn thiện một sản phẩm.</p>
+        <p><img alt="" src="https://job-api.satek.vn/storage/editor/dJdcYLuC1dsaCPkJrJxhwfOnhDbiVHiF2rJxeyjM.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Nếu doanh nghiệp không lên kế hoạch chi tiết như vậy, có thể dẫn đến trường hợp nhà sản xuất sẽ mua đầy đủ nguyên vật liệu chung cho một thành phẩm để tiến hành sản xuất. Điều này sẽ khiến thời gian sản xuất kéo dài nếu như quá trình mua nguyên vật liệu không đáp ứng kịp thời tiến độ sản xuất.</p>
+        <p>Do đó, nếu như nhà sản xuất có thể biết được định mức nguyên vật liệu và phân chia theo từng giai đoạn, doanh nghiệp có thể sản xuất các bán thành phẩm với những nguyên liệu có sẵn trước và khi các nguyên vật liệu khác được nhập về sẽ tiếp tục quy trình sản xuất còn lại và không gây gián đoạn tiến độ sản xuất.</p>
+        <h2><b>Giảm chi phí sản xuất</b></h2>
+        <p>Hơn nữa, khi doanh nghiệp không tính toán chi tiết rõ số lượng nguyên vật liệu cho từng bán thành phẩm, từng sản phẩm, doanh nghiệp có thể mua với số lượng lớn nguyên vật liệu và dẫn đến dư thừa trong sản xuất.<img alt="" src="https://job-api.satek.vn/storage/editor/sVDLBUrJxmT2N5o0j7pMZnEebJreRlBkULnSjxVc.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Điều này không những làm tăng chi phí sản xuất mà còn làm tăng chi phí quản lý kho. Vì vậy, nếu doanh nghiệp tính toán được chính xác định mức nguyên vật liệu (BOM), doanh nghiệp sẽ giảm được chi phí đáng kể trong cả quá trình sản xuất và quản lý hàng tồn kho.</p>
+        <h2><b>Tiết kiệm thời gian quy trình làm việc</b></h2>
+        <p>Chắc hẳn tiết kiệm thời gian quy trình làm việc giữa các bộ phận là mối quan tâm mà mọi chủ doanh nghiệp đều mong muốn. Mặc dù định mức nguyên vật liệu (BOM) là một chi tiết nhỏ trong tổng thể quá trình sản xuất. Nhưng nếu doanh nghiệp chú trọng vào định mức nguyên vật liệu (BOM) chuẩn xác cùng với công đoạn chi tiết thì doanh nghiệp có thể rút ngắn được thời gian đáng kể.<img alt="" src="https://job-api.satek.vn/storage/editor/9lmUsIwc9D14FJk78Jh5QvSEPKPsMbq5jgZ35oXI.png" style="width: 2000px; height: 1044px;" /></p>
+        <p>Cụ thể doanh nghiệp có thể tiết kiệm thời gian và làm việc nhanh hơn nhờ vào thiết kế BOM và các công đoạn việc chi tiết. Khi doanh nghiệp đã chuẩn bị đầy đủ BOM và công đoạn thì thời gian tính toán nguyên vật liệu cần thiết, lên kế hoạch sản xuất chi tiết, tổng thể sẽ được tự động hóa trên phần mềm. Từ đó, thời gian mua hàng, thời gian trong từng công đoạn sản xuất sẽ được giảm xuống đáng kể.</p>
+        <p>Tóm lại, trên đây là những lý do mà định mức nguyên vật liệu (BOM) có thể góp phần cải thiện quá trình quản trị sản xuất mà bạn nên cần biết. FOSO mong rằng những thông tin trên sẽ hữu ích và giúp bạn cải thiện tốt hơn trong quá trình quản trị sản xuất.</p>
+        `,
       author: {
         id: 11,
         name: "Trần Thị K",

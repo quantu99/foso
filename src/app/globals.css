@@ -140,24 +140,24 @@
 
   /* badge */
   .badge.success {
-    @apply bg-light-green text-hard-green;
+    @apply bg-[#E2F0FE] text-[#0F4F9E];
   }
 
-  .badge.warning {
+  .badge.success-1 {
     @apply bg-soft-yellow text-main-yellow;
   }
 
-  .badge.danger {
+  .badge.success-2 {
     @apply bg-soft-red text-main-red;
   }
 
-  .badge.disable {
+  .badge.success-3 {
     @apply bg-soft-grey text-dark-grey;
   }
-  .badge.simple {
+  .badge.success-4 {
     @apply bg-light-grey px-2 py-1 text-soft-black;
   }
-  .badge.salary {
+  .badge.success-5 {
     @apply bg-green-6 bg-opacity-10 px-2 py-1 text-hard-green;
   }
   .swiper-pagination-bullet-active {

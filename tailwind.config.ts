@@ -91,10 +91,13 @@ const config: Config = {
           "1": "#25272A",
           "2": "#050505",
           "3": "#33404A",
+          "4": "#052B1E",
         },
         grey: {
           "0": "#667F93",
           "1": "#ACB3C7",
+          "3": "#4D5F6E",
+          "4": "#809FB8",
         },
         navShadow: "rgba(14, 255, 66, 0.33)",
         primaryBlack: "#212f3f",
@@ -142,7 +145,8 @@ const config: Config = {
       backgroundImage: {
         "foso-custom-gradient":
           "linear-gradient(0deg, #1AD598, #1AD598),radial-gradient(100% 100% at 50% 0%, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%)",
-        "blue-linear": "linear-gradient(77.74deg, #013DA0 11.85%, #0142A9 20.65%, #0148B3 29.45%, #024EBC 38.25%, #0254C5 47.05%, #025ACE 55.84%, #0261D7 64.64%, #0267E1 73.44%, #036EEA 82.24%, #0375F3 91.04%)",
+        "blue-linear":
+          "linear-gradient(77.74deg, #013DA0 11.85%, #0142A9 20.65%, #0148B3 29.45%, #024EBC 38.25%, #0254C5 47.05%, #025ACE 55.84%, #0261D7 64.64%, #0267E1 73.44%, #036EEA 82.24%, #0375F3 91.04%)",
         "custom-gradient":
           "linear-gradient(to bottom, #00341D 10%, #0C9B5B, #29DA70)",
         "green-dark-to-light":
@@ -157,6 +161,8 @@ const config: Config = {
         buttonSearch:
           "linear-gradient(131deg, #75EABB 8.19%, #54DD9B 30%, #31BB79 73.63%, #168B58 95.44%)",
         borderGradient:
+          "linear-gradient(360deg, rgba(9, 9, 11, 0.05) 0%, rgba(9, 9, 11, 0.1) 100%)",
+        langBox:
           "linear-gradient(360deg, rgba(9, 9, 11, 0.05) 0%, rgba(9, 9, 11, 0.1) 100%)",
       },
       boxShadow: {
@@ -174,6 +180,17 @@ const config: Config = {
         navDetail: "0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset",
         navButtonDetail: "0px -2px 4px 0px rgba(0, 0, 0, 0.08)",
         randomCompanyLogo: "0px 12px 24px -4px #919EAB29",
+        "inset-light": "0px 2px 83.99px 0px #00000005 inset",
+        "outer-soft": "-9px 20px 59.99px -24px #0000000D",
+        "top-white": "1px -1px 0px 0px #FFFFFF",
+        "bottom-gray": "-1px 1px 0px 0px #F0F0F0",
+        reactionBox: "0px 1px 2px 0px #1212170F",
+        reactionBoxPlus: "0px 1px 3px 0px #1212171A",
+        glass:
+          "0px 2px 83.99px 0px #00000005 inset, -9px 20px 59.99px -24px #0000000D, 1px -1px 0px 0px #FFFFFF, -1px 1px 0px 0px #F0F0F0",
+      },
+      backdropBlur: {
+        "25": "24.997100830078125px",
       },
       lineClamp: {
         "8": "8",
