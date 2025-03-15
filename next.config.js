@@ -1,4 +1,40 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  images: {
+    remotePatterns: [{ hostname: "**" }],
+  },
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ["@svgr/webpack"],
+    });
 
-module.exports = nextConfig
+    return config;
+  },
+  async rewrites() {
+    return [
+      {
+        source: "/sitemap.xml",
+        destination: "/sitemap",
+      },
+      {
+        source: "/sitemap/:slug.xml",
+        destination: "/sitemap/:slug",
+      },
+      {
+        source: "/sitemap/:slug/:id.xml",
+        destination: "/sitemap/:slug/:id",
+      },
+      {
+        source: "/:catSlug/:slug-:id(\\d+).html",
+        destination: "/blogs/detail",
+      },
+      {
+        source: "/:slug",
+        destination: "/blogs/category",
+      },
+    ];
+  },
+};
+
+module.exports = nextConfig;
