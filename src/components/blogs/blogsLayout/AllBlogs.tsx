@@ -92,7 +92,7 @@ export function AllBlogs({ blogs, cats, title }: any) {
   };
 
   return (
-    <div className="flex justify-center gap-8">
+    <div className="flex justify-center px-5 lg:px-0 lg:gap-8">
       <div className="flex w-[1042px] flex-col gap-[72px]">
         {searchTerm && (
           <div className="mt-4">

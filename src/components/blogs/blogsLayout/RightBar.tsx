@@ -9,7 +9,7 @@ import Link from "next/link";
 import { getLinkCategory } from "@/helpers";
 export function RightBar({ cats, onSearch }: any) {
   return (
-    <div className="flex flex-col gap-8">
+    <div className="hidden lg:flex flex-col gap-8">
       <Searchable onSearch={onSearch} />
       <CatList cats={cats} />
       <div role="button" className="w-full">

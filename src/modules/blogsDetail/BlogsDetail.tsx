@@ -60,7 +60,7 @@ export function BlogsDetail({ detail, cats }: any) {
           optionLink="/blogs"
         />
       </div>
-      <div className="flex gap-6">
+      <div className="flex lg:gap-6">
         <MainContent cat={exactCatName} detail={detail} exactCatType={exactCatType} />
         <RightBar tableOfContents={tableOfContents} />
       </div>

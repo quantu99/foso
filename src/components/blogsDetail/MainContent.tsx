@@ -257,7 +257,7 @@ export function MainContent({ cat, detail, exactCatType }: any) {
           </motion.div>
         </div>
       </div>
-      <div className="mt-6 flex flex-col gap-6">
+      <div className="mt-6 lg:flex hidden flex-col gap-6">
         <span className="text-3xl font-extrabold leading-[150%] text-black-0 sm:text-4xl sm:leading-[200%]">
           Bài viết liên quan
         </span>

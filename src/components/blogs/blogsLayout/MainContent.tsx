@@ -17,9 +17,9 @@ export function MainContent({ blogs, cats, title }: any) {
       <span className="text-4xl font-extrabold leading-[200%] text-black-2">
         {title}
       </span>
-      <div className="relative mb-12 mt-6 flex h-[312px] w-full items-center rounded-[40px] bg-blue-linear pl-10">
-        <div className="flex w-1/2 flex-col gap-8">
-          <h2 className="text-4xl font-bold text-white">
+      <div className="relative mb-12 mt-6 flex h-[312px] w-full items-center rounded-[40px] bg-blue-linear pl-5 lg:pl-10">
+        <div className="flex w-full lg:w-1/2 flex-col gap-8">
+          <h2 className="text-xl lg:text-4xl font-bold text-white">
             Gia nhập cộng đồng FMRP - Kết nối, chia sẻ, cùng phát triển!
           </h2>
           <div
@@ -30,7 +30,7 @@ export function MainContent({ blogs, cats, title }: any) {
             <ArrowUpRight className="h-[22px] w-[22px] text-white" />
           </div>
         </div>
-        <div className="absolute bottom-0 right-0">
+        <div className="absolute hidden lg:block bottom-0 right-0">
           <Image
             src={banner}
             alt="banner"
@@ -40,7 +40,7 @@ export function MainContent({ blogs, cats, title }: any) {
           />
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {blogs.map((item: any, index: number) => (
           <ContentCard key={index} item={item} cats={cats} />
         ))}

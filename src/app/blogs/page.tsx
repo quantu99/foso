@@ -10,10 +10,10 @@ export default function BlogsPage() {
   return (
     <div className="mt-[60px] font-raleway relative">
       <BlogsMain title="Tất cả bài viết" cats={categories} blogs={allBlogs} />
-      <div className="absolute top-[200px] left-[100px] w-[200px] lg:w-[282px]">
+      <div className="absolute top-[200px] hidden lg:block left-[100px] w-[200px] lg:w-[282px]">
         <Image src={note} className="w-full h-full object-cover" alt="image-thumb-1" />
       </div>
-      <div className="absolute top-[200px] right-[100px] w-[200px] lg:w-[282px]">
+      <div className="absolute top-[200px] hidden lg:block right-[100px] w-[200px] lg:w-[282px]">
         <Image src={hand} className="w-full h-full object-cover" alt="image-thumb-2" />
       </div>
     </div>
